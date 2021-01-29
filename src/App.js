@@ -54,14 +54,14 @@ function App() {
 
     // delete 
     const deleteBtn = (id) => {
-      showAlert(true, 'you can edit now', 'success')
+      showAlert(true, 'item deleted', 'success')
       const newBtn = list.filter((item) => item.id !== id)
       return setList(newBtn)
     }
 
     // edit 
     const editBtn = (id) => {
-      showAlert(true, 'item edited', 'success')
+      showAlert(true, 'you can edit now', 'success')
       const editNewBtn = list.find((item) => item.id === id)
       setIsEditing(true)
       setIsEditId(id)
